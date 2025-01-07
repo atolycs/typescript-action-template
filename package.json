@@ -6,13 +6,10 @@
     "prepare": "husky",
     "lint-staged": "lint-staged",
     "lint": "biome lint .",
-    "format": "bimoe format --fix ."
+    "format": "bimoe format --fix .",
+    "package": "npx esbuild --platform=node --bundle --outdir=dist src/index.ts"
   },
-  "keywords": [
-    "actions",
-    "node",
-    "setup"
-  ],
+  "keywords": ["actions", "node", "setup"],
   "author": "Atolycs",
   "license": "MIT",
   "description": "My Github Action Template",
@@ -32,8 +29,6 @@
     "@actions/core": "^1.11.1"
   },
   "lint-staged": {
-    "./src/**/*.ts": [
-      "biome format --fix ."
-    ]
+    "./src/**/*.ts": ["biome format --fix ."]
   }
 }
