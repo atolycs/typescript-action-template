@@ -29,8 +29,7 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@actions/core": "^1.11.1",
-    "cloudflare": "^3.5.0"
+    "@actions/core": "^1.11.1"
   },
   "lint-staged": {
     "./src/**/*.ts": [
